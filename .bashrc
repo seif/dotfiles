@@ -10,11 +10,11 @@ export PATH=$PATH:/usr/local/pgsql/bin
 export PATH=$PATH:/Library/PostgreSQL/8.3/bin
 
 # Unbreak broken, non-colored terminal
-export TERM='xterm-color'
+export TERM='msys'
 alias ls='ls -G'
 alias ll='ls -lG'
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-export GREP_OPTIONS="--color"
+
 
 # Erase duplicates in history
 export HISTCONTROL=erasedups
@@ -73,6 +73,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/Library/Frameworks/Python.
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 source ~/bin/git-completion.bash
+source ~/bin/git-flow-completion.bash
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
