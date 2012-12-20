@@ -1,7 +1,28 @@
+[merge]
+    tool = BeyondCompare3
+    summary = true
 [user]
-    name = Gary Bernhardt
-    email = gary.bernhardt@gmail.com
+    name = Seif Attar
+    email = iam@seifattar.net
+[core]
+    autocrlf = true
 [diff]
+    guitool = beyondcompare3
+    tool = beyondcompare3
+[difftool "beyondcompare3"]
+    path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
+    cmd = \"C:/Program Files (x86)/Beyond Compare 3/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "BeyondCompare3"]
+    path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
+    cmd = \"C:/Program Files (x86)/Beyond Compare 3/BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool]
+    keepBackup = false
+[branch]
+    autosetupmerge = always
+[rerere]
+    enabled = 1
+[push]
+    default = matching
 [color]
     ui = auto
 [alias]
@@ -42,7 +63,3 @@
     ra = !git r --all
     l = "!. ~/.githelpers && pretty_git_log"
     la = !git l --all
-
-[merge]
-    tool = vimdiff
-
